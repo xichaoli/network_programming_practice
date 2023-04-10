@@ -6,3 +6,4 @@ set(CMAKE_C_STANDARD 11)
 
 add_subdirectory(lesson-4/)
 add_subdirectory(lesson-5/)
+add_subdirectory(lesson-6/)
