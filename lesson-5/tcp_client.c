@@ -40,7 +40,7 @@ int main(int argc, char **argv) {
     struct sockaddr_in server_addr;
 
     if (argc != 2) {
-        perror("usage: tcpclient <address>");
+        perror("usage: tcp_client <address>");
         exit(EXIT_FAILURE);
     }
 

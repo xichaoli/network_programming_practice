@@ -12,10 +12,10 @@
 /* 从socket中读取size个字节 */
 size_t readn(int fd, char *buf, size_t size) {
     char *buffer_pointer = buf;
-    int length = size;
+    size_t length = size;
 
     while (length > 0) {
-        int result = read(fd, buffer_pointer, length);
+        ssize_t result = read(fd, buffer_pointer, length);
         if (result == -1) {
             if (errno == EINTR) {
                 /* 考虑非阻塞的情况，这里需要再次调用read */
@@ -52,7 +52,7 @@ void read_date(int sockfd) {
     }
 }
 
-int main(int argc, char **argv) {
+int main() {
     int listen_fd, connect_fd;
     socklen_t client_len;
     struct sockaddr_in server_addr, client_addr;

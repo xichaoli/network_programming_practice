@@ -1,3 +1,3 @@
-add_executable(tcpserver tcpserver.c)
+add_executable(tcp_server tcp_server.c)
 
-add_executable(tcpclient tcpclient.c)
+add_executable(tcp_client tcp_client.c)
