@@ -2,13 +2,13 @@
 极客时间《网络编程实战》课程代码
 
 # 编译和运行
-## 使用 ninja
+## 使用 Makefile
 在Linux环境下，先创建build目录，再进到目录build下，执行cmake
 ```bash
 mkdir build && cd build && cmake .. && make
 ```
 
-## 使用 Makefile
+## 使用 ninja
 ```bash
 mkdir build && cd build && cmake -G Ninja .. && make
 ```
